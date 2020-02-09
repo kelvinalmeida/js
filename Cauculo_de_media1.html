@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script>
+          
+            function calculodamedia() {
+                
+                document.write("<h1>Dados dos Alunos</h1>" + "<br>");
+                i = 1;
+                while(i <= 3) {
+                    
+                    nome = prompt("Informe o seu nome:", "");
+                    nota1 = prompt("Informe a nota 1:", "");
+                    nota2 = prompt("Informe a nota 2:", "");
+
+                    media = (parseInt(nota1) + parseInt(nota2)) / 2;
+
+                    if(media >= 7) {
+                        status = "Aprovado";
+                    }
+                    else {
+                        status = "Reprovado";
+                    }
+
+                    document.write("Nome: " + nome + "<br>");
+                    document.write("Nota1: " + nota1 + "<br>");
+                    document.write("Nota2: " + nota2 + "<br>");
+                    document.write("Media: " + media + "<br>");
+                    document.write("Status: " + status + "<br>" + "<br>" + "<br>");
+                    
+                    i = i + 1;
+                }
+            }    
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" name = "calcular" value="Calcular Media" onclick="calculodamedia()"> 
+        </form>
+    </body>
+</html>
