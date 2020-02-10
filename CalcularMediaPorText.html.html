@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Calculo da Nota!</title>
+        <script> 
+            function calculandonotas() {
+
+                nota = (parseInt(document.forms[0].nota1.value) + parseInt(document.forms[0].nota2.value)) / 2;
+
+                //nota = 8;
+
+                if (nota >= 7) {
+
+                    alert("Aprovado! Sua Media Foi: " + nota);
+                }
+                else {
+                    alert("Reprovado! Sua Media Foi: " + nota);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <h1>Vamos calcular a sua Nota?</h1>
+            <p>Informe a nota 1 </p>
+            <input type = "text" name = "nota1" ><br>
+            <p>Informe a nota 2 </p>
+            <input type = "text" name = "nota2"  > <br><br>
+            
+            <input type = "button" name = "button" value = "Calcular a sua media" Onclick = "calculandonotas()">
+        </form>
+    </body>
+</html>
